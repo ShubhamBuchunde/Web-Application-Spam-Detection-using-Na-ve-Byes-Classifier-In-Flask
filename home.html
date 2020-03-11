@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylee.css') }}">
+</head>
+<body>
+	<div class="backImg">
+	</div>
+	<header>
+		<div class="top">
+		<h2>Machine Learning</h2>
+		<h2>SMS Spam Detection</h2>
+		
+	</div>
+	</header>
+
+	<div class="ml-container">
+
+		<form action="{{ url_for('predict')}}" method="POST">
+		<label style="color: green;" text-align: center;>Enter Your Comments here</label>
+		<br>
+				<!-- <input type="text" name="comment"/> -->
+		<textarea name="comment"></textarea>
+		<br/>
+
+		<input type="submit" style="color:brown;" value="Predict">
+		
+	</form>
+		
+	</div>
+
+	
+	
+
+</body>
+</html>
